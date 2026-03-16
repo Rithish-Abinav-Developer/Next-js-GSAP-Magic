@@ -50,8 +50,7 @@ export default function Page() {
           start: "center center",
           end: "+=1500",
           scrub: 1,
-          pin: true,
-          markers: true
+          pin: true
         }
       })
 
