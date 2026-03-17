@@ -24,16 +24,6 @@ export default function Page() {
   const container = useRef(null)
   const text = useRef(null)
 
-  useEffect(() => {
-    const handleResize = () => {
-      setMobile(window.innerWidth < 1200);
-    }
-    handleResize()
-    window.addEventListener("resize", handleResize)
-    return () => {
-      window.removeEventListener("resize", handleResize)
-    }
-  }, [])
 
 
   useLayoutEffect(() => {
