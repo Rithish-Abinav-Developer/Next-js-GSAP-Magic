@@ -18,7 +18,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 export default function Page() {
 
-  const [mobile, setMobile] = useState(null)
+
 
   const wrap = useRef(null)
   const container = useRef(null)
@@ -38,7 +38,7 @@ export default function Page() {
 
   useLayoutEffect(() => {
 
-    if (mobile === null || mobile) return
+    
 
     const ctx = gsap.context(() => {
 
@@ -71,13 +71,10 @@ export default function Page() {
 
     return () => ctx.revert()
 
-  }, [mobile])
+  }, [])
 
 
-  if (mobile === null) return null
 
-
-  if (mobile) return <p className="only_desktop">Only for Desktop</p>
 
   return (
     <>
