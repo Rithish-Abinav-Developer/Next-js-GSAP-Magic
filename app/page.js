@@ -11,7 +11,7 @@ import car5 from "@/public/images/car5.png"
 
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/ScrollTrigger"
-import Head from "next/head"
+
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -68,10 +68,7 @@ export default function Page() {
 
   return (
     <>
-     <Head>
-        <title>Vintage Cars</title>
-        <meta name="description" content="Classic cars" />
-      </Head>
+    
       <p className="vintage_text" ref={text}>
         VINTAGE<br /><span>CARS</span>
       </p>
