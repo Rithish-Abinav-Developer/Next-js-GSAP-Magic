@@ -41,7 +41,7 @@ export default function Page() {
           end: "+=1500",
           scrub: 1,
           pin: true,
-          markers:true
+          markers:false
         }
       })
 
